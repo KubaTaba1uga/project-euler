@@ -1,7 +1,6 @@
 fn main(){
     let result = find_fb_numbers(4000000, 0, 1, vec![]);
     println!("result {:?}", result);
-    println!("vector: {:?}", get_vector());
 }
 
 fn find_fb_numbers(stop_value: u32, value_0: u32, value_1: u32, fb_numbers:Vec<u32>) -> Vec<u32>{
