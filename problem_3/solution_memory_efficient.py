@@ -6,11 +6,15 @@ def find_factors(the_number):
 
 def is_prime(the_number):
     """ As prime number has only two factors
-            1 and itself, check factors length
+            1 and itself, look for first three factors
+            if there are found it is not prime number
     """
-    for element, i in enumerate(find_factors(the_number)):
-        if i > 1:
-            return False
+    factors_counter = 0
+    for i in range(1, the_number):
+        if the_number % i == 0:
+            factors_counter += 1
+            if factors_counter == 2:
+                return False
     return True
 
 
