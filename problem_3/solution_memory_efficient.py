@@ -9,11 +9,11 @@ def is_prime(the_number):
             1 and itself, look for first three factors
             if there are found it is not prime number
     """
-    factors_counter = 0
+    factors_counter = 1
     for i in range(1, the_number):
         if the_number % i == 0:
             factors_counter += 1
-            if factors_counter == 2:
+            if factors_counter == 3:
                 return False
     return True
 
